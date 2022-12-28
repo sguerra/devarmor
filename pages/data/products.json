@@ -5,7 +5,8 @@
         "stars": 4.5,
         "price": "$569.56",
         "currency": "MXN",
-        "link": "https://amzn.to/3WNxhz5"
+        "link": "https://amzn.to/3WNxhz5",
+        "type": "helms"
     },
     {
         "title": "Star Wars Holiday Print Jacquard Knit Beanie",
@@ -13,7 +14,8 @@
         "stars": 4.6,
         "price": "$465.57",
         "currency": "MXN",
-        "link": "https://amzn.to/3hWqqER"
+        "link": "https://amzn.to/3hWqqER",
+        "type": "helms"
     },
     {
         "title": "STAR WARS Concept One Gorro para Hombre y Mujer Tejido Original con Diseño The Mandalorian Grogu Poses Color Negro",
@@ -21,7 +23,8 @@
         "stars": 0,
         "price": "$329.00",
         "currency": "MXN",
-        "link": "https://amzn.to/3I3IQ1d"
+        "link": "https://amzn.to/3I3IQ1d",
+        "type": "helms"
     },
     {
         "title": "STAR WARS Concept One Gorro para Hombre y Mujer Tejido Original con Diseño The Mandalorian The Child Verde Color Verde",
@@ -29,7 +32,8 @@
         "stars": 0,
         "price": "$329.00",
         "currency": "MXN",
-        "link": "https://amzn.to/3FYLrXt"
+        "link": "https://amzn.to/3FYLrXt",
+        "type": "helms"
     },
     {
         "title": "Concept One Star Wars Darth Vader - Gorro Enrollable, Color Negro, Talla única, Negro -, Talla única",
@@ -37,6 +41,16 @@
         "stars": 4.5,
         "price": "$512.43",
         "currency": "MXN",
-        "link": "https://amzn.to/3VtWDkJ"
+        "link": "https://amzn.to/3VtWDkJ",
+        "type": "helms"
+    },
+    {
+        "title": "STAR WARS Circle Fight Short Sleeve t-Shirt Camiseta para Hombre",
+        "image": "https://m.media-amazon.com/images/I/91j-OS2GdSL._AC_SX679_.jpg",
+        "stars": 4.7,
+        "price": "$380.56",
+        "currency": "MXN",
+        "link": "https://amzn.to/3VtFiIs",
+        "type": "breastplates"
     }
 ]

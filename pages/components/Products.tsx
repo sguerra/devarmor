@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import products from "../data/products.json"
 
@@ -28,10 +28,46 @@ const ProductItem: FC<ProductItemProps> = ({title, image, stars, price, currency
 }
 
 export const Products: FC = ()=>{
+    const [filtered, setFiltered] = useState(products)
+
+    useEffect(()=>{
+
+        const searchTextHandler = (event: Event)=>{
+            const text = event.detail
+            if(text==='') {
+                setFiltered(products)
+                return
+            }
+            setFiltered(products.filter((product)=>{
+                return product.title.toLowerCase().indexOf(text.toLowerCase())>=0
+            }))
+        }
+        const handleNavbarToggle = (event: Event)=>{
+            const detailType = event.detail
+
+            if(detailType==='all'){
+                setFiltered(products)
+            }else if(detailType==='stars'){
+                setFiltered(products.filter((product)=>product.stars>=4.5))
+            }else{
+                setFiltered(products.filter((product)=>product.type===detailType))
+            }
+        }
+
+
+        // listeners
+        window.addEventListener('search:text', searchTextHandler)
+        window.addEventListener('navbar:toggle', handleNavbarToggle)
+        return ()=>{
+            // cleanup
+            window.removeEventListener('search:text', searchTextHandler)
+            window.removeEventListener('navbar:toggle', handleNavbarToggle)
+        }
+    })
 
     return (
         <section className="grid grid-cols-3 gap-4">
-        {products.map((product)=>(
+        {filtered.map((product)=>(
             <ProductItem
                 image={product.image}
                 title={product.title}
