@@ -7,7 +7,7 @@ type NavigationItemProps = {
 
 const NavigationItem: FC<NavigationItemProps> = ({children, selected=false})=>{
     const selectedClassname = selected ? 'bg-black text-white' : ''
-    const hoverClassname = 'hover:bg-black hover:text-white'
+    const hoverClassname = 'hover:bg-black hover:text-white cursor-pointer'
     return (
         <li className={`${selectedClassname} ${hoverClassname} py-2 px-4 my-2 mx-4`}>{children}</li>
     )
