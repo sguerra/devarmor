@@ -14,6 +14,6 @@ export const SearchInput: FC = ()=>{
     }, [])
 
     return (<>
-        <input id="searchInput" type="text" placeholder="Search input" className="py-2 px-4" onKeyUp={handleKeyUp}></input>
+        <input id="searchInput" type="text" placeholder="Search in the armory" className="py-2 px-4 w-72" onKeyUp={handleKeyUp}></input>
     </>)
 }

@@ -9,10 +9,13 @@ type ProductItemProps = {
     stars: number
     price: string
     currency: string
+    link: string
     wagon?: boolean
 }
 
-const ProductItem: FC<ProductItemProps> = ({title, image, stars, price, currency, wagon=false})=>{
+// TODO: Wagon: <button className=" bg-white hover:bg-sky-700 hover:text-white  border-2 border-sky-700 text-sky-700 p-1 rounded-lg">Add to wagon</button>
+
+const ProductItem: FC<ProductItemProps> = ({title, image, stars, price, currency, link, wagon=false})=>{
     const ellipsisTitle = `${title.slice(0,40)} ${title.slice(40)?'...':''}`
     return (
         <article className="flex flex-col text-center border-2 rounded-lg p-4 h-80 justify-between">
@@ -22,7 +25,7 @@ const ProductItem: FC<ProductItemProps> = ({title, image, stars, price, currency
             <h5>{ellipsisTitle}</h5>
             <strong>{price} {currency}</strong>
             <Rating initialValue={stars} readonly size={20} fillClassName="!flex flex-row" emptyClassName="!flex flex-row"/>
-            <button className=" bg-white hover:bg-sky-700 hover:text-white  border-2 border-sky-700 text-sky-700 p-1 rounded-lg">Add to wagon</button>
+            <a target="_new" href={link} className="bg-white hover:bg-slate-800 hover:text-amber-600  border-2 border-slate-800 text-slate-800 p-1 rounded-lg cursor-pointer">Buy in shop</a>
         </article>
     )
 }
@@ -73,6 +76,7 @@ export const Products: FC = ()=>{
                 title={product.title}
                 stars={product.stars}
                 price={product.price}
+                link={product.link}
                 currency="MXN"
             />
         ))}
