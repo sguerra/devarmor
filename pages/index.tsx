@@ -14,6 +14,9 @@ export default function Home() {
         <meta name="description" content="The Dev Armor Store" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Offside&family=Zilla+Slab&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet"></link>
       </Head>
       <main className={`${styles.main} grid grid-cols-3 gap-20 p-10`}>
         <div>
