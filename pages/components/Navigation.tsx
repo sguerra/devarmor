@@ -20,7 +20,7 @@ const NavigationItem: FC<NavigationItemProps> = ({children, type})=>{
     }, [])
 
     useEffect(()=>{
-        const handleNavbarToggle = (event: Event)=>{
+        const handleNavbarToggle = (event: Event&{detail?:string})=>{
             const detailType = event.detail
             setSelected(type===detailType)
         }

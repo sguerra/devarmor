@@ -91,8 +91,9 @@ export const Products: FC = ()=>{
 
     return (
         <section className="grid grid-cols-3 gap-4">
-        {filtered.map((product)=>(
+        {filtered.map((product, i)=>(
             <ProductItem
+                key={i}
                 image={product.image}
                 title={product.title}
                 stars={product.stars}
