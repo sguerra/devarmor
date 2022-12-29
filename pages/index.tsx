@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Offside&family=Zilla+Slab&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet"></link>
       </Head>
-      <main className={`${styles.main} grid grid-cols-3 gap-20 p-10`}>
+      <main className={`${styles.main} grid grid-cols-3 gap-20 p-10 h-screen`}>
         <div>
           <Logo/>
         </div>
@@ -31,7 +31,7 @@ export default function Home() {
         <div>
           <Navigation/>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 h-full overflow-auto">
           <Products/>
         </div>
       </main>
