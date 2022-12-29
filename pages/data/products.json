@@ -1,5 +1,32 @@
 [
     {
+        "title": "WAHOU Gorra de béisbol Geek by Nature Gorras de béisbol Gorra con Visera Sistema operativo Linux Sombreros Parasol para Hombres",
+        "image": "https://m.media-amazon.com/images/I/814YFcqPbXL._AC_SX679_.jpg",
+        "stars": 0,
+        "price": "$357.51",
+        "currency": "MXN",
+        "link": "https://amzn.to/3CbqXKa",
+        "type": "helms"
+    },
+    {
+        "title": "Playstation Joypad Snapback Flat Bill Gorra de béisbol para hombre, color negro",
+        "image": "https://m.media-amazon.com/images/I/71oe9rX0KBL._AC_SX679_.jpg",
+        "stars": 4.6,
+        "price": "$487.98",
+        "currency": "MXN",
+        "link": "https://amzn.to/3VuCWcj",
+        "type": "helms"
+    },
+    {
+        "title": "SUPER MARIO Bioworld Gorra Unisex | Original Diseño 1985",
+        "image": "https://m.media-amazon.com/images/I/71OFR0P5rGL._AC_SX679_.jpg",
+        "stars": 0,
+        "price": "$499.00",
+        "currency": "MXN",
+        "link": "https://amzn.to/3vpCJwC",
+        "type": "helms"
+    },
+    {
         "title": "Star Wars Holiday Knit Beanie Hat Black",
         "image": "https://m.media-amazon.com/images/I/71OFR0P5rGL._AC_SX679_.jpg",
         "stars": 4.5,
@@ -63,12 +90,39 @@
         "type": "breastplates"
     },
     {
+        "title": "Nintendo Playera de Rayas Retro Super Mario Running Camiseta para para Hombre",
+        "image": "https://m.media-amazon.com/images/I/71zboXc6XfL._AC_SX679_.jpg",
+        "stars": 4.3,
+        "price": "$413.04",
+        "currency": "MXN",
+        "link": "https://amzn.to/3PXTys3",
+        "type": "breastplates"
+    },
+    {
         "title": "Pateel NASA Meatball Logo Sudadera Space Shuttle Rocket Science Geek",
         "image": "https://m.media-amazon.com/images/I/71zz9QBGmKL._AC_SX679_.jpg",
         "stars": 3.4,
         "price": "$360.00",
         "currency": "MXN",
         "link": "https://amzn.to/3vnK1Rv",
+        "type": "breastplates"
+    },
+    {
+        "title": "Chamarra de Hombre con Estampado NASA, Bolsas Laterales y Cierre, Juvenil y Moderna.",
+        "image": "https://m.media-amazon.com/images/I/51Zk70-Ba6L._AC_SX679_.jpg",
+        "stars": 4.5,
+        "price": "$799.00",
+        "currency": "MXN",
+        "link": "https://amzn.to/3C8RAiB",
+        "type": "breastplates"
+    },
+    {
+        "title": "CHAOS MONKEY Unisex 3D Galaxy Milk Dripping Hoodie Print Pullover Sudadera con Capucha con Grandes Bolsillos para Hombres y Mujeres",
+        "image": "https://m.media-amazon.com/images/I/61qhk54pfjL._AC_SX679_.jpg",
+        "stars": 4.5,
+        "price": "$709.99",
+        "currency": "MXN",
+        "link": "https://amzn.to/3WuPH8k",
         "type": "breastplates"
     },
     {
@@ -146,7 +200,7 @@
     {
         "title": "Reloj Electrónico Binario, TXG Reloj Digital para hombre con LED, Reloj de Acero Inoxidable Impermeable",
         "image": "https://m.media-amazon.com/images/I/616eIuNcOCL._AC_SX679_.jpg",
-        "stars": 4.0,
+        "stars": 4,
         "price": "$319.20",
         "currency": "MXN",
         "link": "https://amzn.to/3I9MAhK",
@@ -197,7 +251,6 @@
         "link": "https://amzn.to/3I7FGcI",
         "type": "attachments"
     },
-    
     {
         "title": "Zak Designs Minecraft Botella de agua aislada al vacío de acero inoxidable de 24 onzas, resistente botella deportiva de fácil agarre y mantiene las bebidas frías (24 onzas, Minecraft)",
         "image": "https://m.media-amazon.com/images/I/61NPpsrjmVL._AC_SX679_.jpg",
@@ -210,7 +263,7 @@
     {
         "title": "R2-D2 - Cafetera manual para el hogar y el hogar (960 ml)",
         "image": "https://m.media-amazon.com/images/I/41Gg5SsnqvL._AC_.jpg",
-        "stars": 4.0,
+        "stars": 4,
         "price": "$1,200.00",
         "currency": "MXN",
         "link": "https://amzn.to/3C6lV1e",
