@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import products from "../data/products.json"
 
@@ -10,6 +10,7 @@ type ProductItemProps = {
     price: string
     currency: string
     link: string
+    type: string
     wagon?: boolean
 }
 
@@ -30,33 +31,46 @@ const ProductItem: FC<ProductItemProps> = ({title, image, stars, price, currency
     )
 }
 
+type productFilters = {
+    search: string,
+    navbar: string
+}
+
 export const Products: FC = ()=>{
-    const [filtered, setFiltered] = useState(products)
+    const [filters, setFilters] = useState<productFilters>({search: '', navbar: 'all'})
+    const filtered = useMemo(()=>{
+        let filteredProducts = [...products]
+        
+        // filter by type
+        if(filters.navbar==='stars')
+            filteredProducts = filteredProducts.filter((product)=>product.stars>=4.5)
+        else if(filters.navbar!=='all')
+            filteredProducts = filteredProducts.filter((product)=>product.type===filters.navbar)
+
+        // filter by search text
+        if(filters.search!=='') {
+            filteredProducts = filteredProducts.filter((product)=>{
+                return product.title.toLowerCase().indexOf(filters.search.toLowerCase())>=0
+            })
+        }
+
+        return filteredProducts
+    }, [filters])
 
     useEffect(()=>{
 
         const searchTextHandler = (event: Event)=>{
-            const text = event.detail
-            if(text==='') {
-                setFiltered(products)
-                return
-            }
-            setFiltered(products.filter((product)=>{
-                return product.title.toLowerCase().indexOf(text.toLowerCase())>=0
-            }))
+            const search = `${event.detail}`
+            setFilters((filters)=>{
+                return {...filters, search}
+            })
         }
         const handleNavbarToggle = (event: Event)=>{
-            const detailType = event.detail
-
-            if(detailType==='all'){
-                setFiltered(products)
-            }else if(detailType==='stars'){
-                setFiltered(products.filter((product)=>product.stars>=4.5))
-            }else{
-                setFiltered(products.filter((product)=>product.type===detailType))
-            }
+            const navbar = `${event.detail}`
+            setFilters((filters)=>{
+                return {...filters, navbar}
+            })
         }
-
 
         // listeners
         window.addEventListener('search:text', searchTextHandler)
